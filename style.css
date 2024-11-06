@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #F9A400;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modo-escuro{
+    background-color: #626161;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#imagem-logo{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+#imagem-modo{
+    margin-right: 3rem;
+}
+
+main {
+    height: calc(100vh - 5rem);
+}
+
+iframe {
+            width: 100%;
+            height: 100%;
+        }
