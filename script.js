@@ -1,9 +1,10 @@
-
-const modoSite = document.getElementById("imagem-modo")
+const modoSite = document.getElementById("imagem-modo");
+const button = document.getElementById("button-inicio");
 
 function mudarModo(){
     const nav = document.getElementsByClassName("navbar")[0]
     nav.classList.toggle("modo-escuro")
+    button.classList.toggle("ia-button-dark")
     if (nav.classList.contains("modo-escuro")) {
         modoSite.src = "./assets/light-mode.svg";
         localStorage.setItem("modo", "escuro");
@@ -26,5 +27,9 @@ window.onload = function () {
 }
 };
 
+function voltarDash() {
+  window.location.href = "forms.html";
+}
 
 modoSite.addEventListener("click", mudarModo);
+button.addEventListener("click", voltarDash);

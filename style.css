@@ -28,6 +28,35 @@ body{
 #imagem-modo{
     margin-right: 3rem;
 }
+.buttons{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.ia-button {
+    background-color: #fff;
+    color: #F9A400;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.ia-button-dark {
+    background-color: #F9A400;
+    color: #F4F4F4;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.ia-button:hover {
+    background-color: #f4f4f4;
+}
 
 main {
     height: calc(100vh - 5rem);

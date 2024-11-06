@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área da IA</title>
+    <link rel="stylesheet" href="forms.css">
+	<script src="forms.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="./assets/logo_athleta_site.svg" alt="Logo" id="imagem-logo">
+                
+            </div>
+            <div class="buttons">
+                <button onclick="window.location.href='index.html'" class="ia-button" id="button-inicio">Inicio</button>
+                <img src="./assets/dark-mode.svg" alt="Modo escuro" id="imagem-modo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+		<form id="iaForm">
+
+            <label>Qual sua faixa etária?</label>
+            <div>
+                <input type="radio" id="faixaetaria1" name="age_range" value="Menos de 18 anos">
+                <label for="faixaetaria1">Menos de 18 anos</label>
+            </div>
+            <div>
+                <input type="radio" id="faixaetaria2" name="age_range" value="Entre 18 e 24 anos">
+                <label for="faixaetaria2">Entre 18 e 24 anos</label>
+            </div>
+            <div>
+                <input type="radio" id="faixaetaria3" name="age_range" value="Entre 25 e 34 anos">
+                <label for="faixaetaria3">Entre 25 e 34 anos</label>
+            </div>
+            <div>
+                <input type="radio" id="faixaetaria4" name="age_range" value="Entre 35 e 44 anos">
+                <label for="faixaetaria4">Entre 35 e 44 anos</label>
+            </div>
+			<div>
+                <input type="radio" id="faixaetaria5" name="age_range" value="Entre 45 e 54 anos">
+                <label for="faixaetaria4">Entre 45 e 54 anos</label>
+            </div>
+			<div>
+                <input type="radio" id="faixaetaria6" name="age_range" value="Entre 54 e 59 anos">
+                <label for="faixaetaria6">Entre 54 e 59 anos</label>
+            </div>
+			<div>
+                <input type="radio" id="faixaetaria7" name="age_range" value="60+">
+                <label for="faixaetaria7">60+</label>
+            </div>
+
+
+
+            <!-- Caixa de seleção (checkbox) para permitir múltiplas escolhas -->
+            <label>Gênero</label>
+            <div>
+                <input type="radio" id="genero1" name="genero" value="Feminino">
+                <label for="genero1">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" id="genero2" name="genero" value="Masculino">
+                <label for="genero2">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" id="genero3" name="genero" value="Prefiro não informar">
+                <label for="genero3">Prefiro não informar</label>
+            </div>
+
+
+			<!-- Caixa de texto para resposta aberta -->
+            <label for="cidade">Localização (Cidade)</label>
+            <input type="text" id="cidade" name="objective" required>
+
+			<label for="estado">Selecione seu estado:</label>
+
+			<select id="estado" name="estado" required>
+				<option value="" disabled selected>Escolha um estado</option>
+				<option value="AC">AC</option>
+				<option value="AL">AL</option>
+				<option value="AP">AP</option>
+				<option value="AM">AM</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="DF">DF</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MT">MT</option>
+				<option value="MS">MS</option>
+				<option value="MG">MG</option>
+				<option value="PA">PA</option>
+				<option value="PB">PB</option>
+				<option value="PR">PR</option>
+				<option value="PE">PE</option>
+				<option value="PI">PI</option>
+				<option value="RJ">RJ</option>
+				<option value="RN">RN</option>
+				<option value="RS">RS</option>
+				<option value="RO">RO</option>
+				<option value="RR">RR</option>
+				<option value="SC">SC</option>
+				<option value="SP">SP</option>
+				<option value="SE">SE</option>
+				<option value="TO">TO</option>
+			</select>
+
+			<label>Renda familiar</label>
+			<div>
+				<input type="radio" id="renda1" name="renda" value="Classe A: superior a R$ 22 mil">
+				<label for="renda1">Classe A: superior a R$ 22 mil</label>
+			</div>
+			<div>
+				<input type="radio" id="renda2" name="renda" value="Classe B: entre R$7,1 mil e R$ 22 mil">
+				<label for="renda2">lasse B: entre R$7,1 mil e R$ 22 mil</label>
+			</div>
+			<div>
+				<input type="radio" id="renda3" name="renda" value="Classe C: entre R$ 2,9 mil e R$ 7,1 mil">
+				<label for="renda3">Classe C: entre R$ 2,9 mil e R$ 7,1 mil</label>
+			</div>
+			<div>
+				<input type="radio" id="renda3" name="renda" value="Classe D/E: até R$ 2,9 mil">
+				<label for="renda3">Classe D/E: até R$ 2,9 mil</label>
+			</div>
+
+			<label for="cidade">Profissão</label>
+			<input type="text" id="profissao" name="objective" required>
+
+			<label>Quais esportes você pratica atualmente?</label>
+			<div>
+				<input type="checkbox" id="pratica1" name="pratica" value="Futebol">
+				<label for="pratica1">Futebol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica2" name="pratica" value="Caminhada e corrida">
+				<label for="pratica2">Caminhada e corrida</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica3" name="pratica" value="Voleibol">
+				<label for="pratica3">Voleibol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica4" name="pratica" value="Academia e musculação">
+				<label for="pratica4">Academia e musculação</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica5" name="pratica" value="Natação">
+				<label for="pratica5">Natação</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica6" name="pratica" value="Tênis de mesa">
+				<label for="pratica6">Tênis de mesa</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica7" name="pratica" value="Ciclismo">
+				<label for="pratica7">Ciclismo</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica8" name="pratica" value="Basquetebol">
+				<label for="pratica8">Basquetebol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica9" name="pratica" value="Atletismo">
+				<label for="pratica9">Atletismo</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica10" name="pratica" value="Esgrima">
+				<label for="pratica10">Esgrima</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica11" name="pratica" value="Baseball">
+				<label for="pratica11">Voleibol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica12" name="pratica" value="Badminton">
+				<label for="pratica12">Basquete</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica12" name="pratica" value="Nenhum">
+				<label for="pratica12">Nenhum</label>
+			</div>
+
+			<label>Quais esportes você tem interesse em experimentar?</label>
+			<div>
+				<input type="checkbox" id="pratica1" name="pratica" value="Futebol">
+				<label for="pratica1">Futebol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica2" name="pratica" value="Caminhada e corrida">
+				<label for="pratica2">Caminhada e corrida</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica3" name="pratica" value="Voleibol">
+				<label for="pratica3">Voleibol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica4" name="pratica" value="Academia e musculação">
+				<label for="pratica4">Academia e musculação</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica5" name="pratica" value="Natação">
+				<label for="pratica5">Natação</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica6" name="pratica" value="Tênis de mesa">
+				<label for="pratica6">Tênis de mesa</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica7" name="pratica" value="Ciclismo">
+				<label for="pratica7">Ciclismo</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica8" name="pratica" value="Basquetebol">
+				<label for="pratica8">Basquetebol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica9" name="pratica" value="Atletismo">
+				<label for="pratica9">Atletismo</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica10" name="pratica" value="Esgrima">
+				<label for="pratica10">Esgrima</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica11" name="pratica" value="Baseball">
+				<label for="pratica11">Voleibol</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica12" name="pratica" value="Badminton">
+				<label for="pratica12">Basquete</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pratica12" name="pratica" value="Nenhum">
+				<label for="pratica12">Nenhum</label>
+			</div>
+
+			<label>Qual é o seu nível de envolvimento com esportes não tão conhecidos?</label>
+            <div>
+                <input type="radio" id="envolvimento1" name="envolvimento" value="Nenhum">
+                <label for="envolvimento1">Nenhum</label>
+            </div>
+			<div>
+                <input type="radio" id="envolvimento2" name="envolvimento" value="Baixo">
+                <label for="envolvimento2">Baixo</label>
+            </div>
+			<div>
+                <input type="radio" id="envolvimento3" name="envolvimento" value="Médio">
+                <label for="envolvimento3">Médio</label>
+            </div>
+			<div>
+                <input type="radio" id="envolvimento4" name="envolvimento" value="Alto">
+                <label for="envolvimento4">Alto</label>
+            </div>
+
+			<label>Você já participou de eventos ou competições relacionadas a esportes não tão conhecidos?</label>
+            <div>
+                <input type="radio" id="eventos1" name="eventos" value="Sim">
+                <label for="eventos1">Sim</label>
+            </div>
+			<div>
+                <input type="radio" id="eventos1" name="eventos" value="Não">
+                <label for="eventos1">Não</label>
+            </div>
+
+			<label>Com que frequência você pratica esportes?</label>
+            <div>
+                <input type="radio" id="frequencia1" name="frequencia" value="Diariamente">
+                <label for="frequencia1">Diariamente</label>
+            </div>
+			<div>
+                <input type="radio" id="frequencia2" name="frequencia" value="Semanalmente">
+                <label for="frequencia2">Semanalmente</label>
+            </div>
+			<div>
+                <input type="radio" id="frequencia3" name="frequencia" value="Mensalmente">
+                <label for="frequencia3">Mensalmente</label>
+            </div>
+			<div>
+                <input type="radio" id="frequencia4" name="frequencia" value="Raramente">
+                <label for="frequencia4">Raramente</label>
+            </div>
+			<div>
+                <input type="radio" id="frequencia5" name="frequencia" value="Nunca">
+                <label for="frequencia5">Nunca</label>
+            </div>
+
+			<label>Qual é a sua principal motivação para praticar esportes?</label>
+            <div>
+                <input type="radio" id="motivacao1" name="motivacao" value="Saúde">
+                <label for="motivacao1">Saúde</label>
+            </div>
+			<div>
+                <input type="radio" id="motivacao2" name="motivacao" value="Lazer">
+                <label for="motivacao2">Lazer</label>
+            </div>
+			<div>
+                <input type="radio" id="motivacao3" name="motivacao" value="Competição">
+                <label for="motivacao3">Competição</label>
+            </div>
+			<div>
+                <input type="radio" id="motivacao4" name="motivacao" value="Socialização">
+                <label for="motivacao4">Socialização</label>
+            </div>
+			<div>
+                <input type="radio" id="motivacao5" name="motivacao" value="Outro">
+                <label for="motivacao5">Outro</label>
+            </div>
+
+			<label>Qual canal você usa para se informar sobre esportes?</label>
+            <div>
+                <input type="radio" id="canal1" name="canal" value="Redes sociais">
+                <label for="canal1">Redes sociais</label>
+            </div>
+			<div>
+                <input type="radio" id="canal2" name="canal" value="Sites especializados">
+                <label for="canal2">Sites especializados</label>
+            </div>
+			<div>
+                <input type="radio" id="canal3" name="canal" value="TV">
+                <label for="canal3">TV</label>
+            </div>
+			<div>
+                <input type="radio" id="canal4" name="canal" value="Eventos">
+                <label for="canal4">Eventos</label>
+            </div>
+			<div>
+                <input type="radio" id="canal5" name="canal" value="Outro">
+                <label for="canal5">Outro</label>
+            </div>
+
+			
+			<label>Você usa aplicativos para monitorar sua prática esportiva?</label>
+            <div>
+                <input type="radio" id="monitorar1" name="monitorar" value="Sim">
+                <label for="monitorar1">Sim</label>
+            </div>
+			<div>
+                <input type="radio" id="monitorar2" name="monitorar" value="Não">
+                <label for="monitorar2">Não</label>
+            </div>
+
+			<label>Com que frequência você usa aplicativos relacionados a esportes?</label>
+            <div>
+                <input type="radio" id="relacionados1" name="relacionados" value="Diariamente">
+                <label for="relacionados1">Diariamente</label>
+            </div>
+			<div>
+                <input type="radio" id="relacionados2" name="relacionados" value="Semanalmente">
+                <label for="relacionados2">Semanalmente</label>
+            </div>
+			<div>
+                <input type="radio" id="relacionados3" name="relacionados" value="Mensalmente">
+                <label for="relacionados3">Mensalmente</label>
+            </div>
+			<div>
+                <input type="radio" id="relacionados4" name="relacionados" value="Raramente">
+                <label for="relacionados4">Raramente</label>
+            </div>
+			<div>
+                <input type="radio" id="relacionados5" name="relacionados" value="Nunca">
+                <label for="relacionados5">Nunca</label>
+            </div>
+
+			<label>O que você gostaria de ver em um aplicativo sobre esportes não tão conhecidos?</label>
+            <div>
+                <input type="radio" id="gostaria1" name="gostaria" value="Funcionalidades específicas">
+                <label for="gostaria1">Funcionalidades específicas</label>
+            </div>
+			<div>
+                <input type="radio" id="gostaria2" name="gostaria" value="Conteúdo">
+                <label for="gostaria2">Conteúdo</label>
+            </div>
+			<div>
+                <input type="radio" id="gostaria3" name="gostaria" value="Comunidade">
+                <label for="gostaria3">Comunidade</label>
+            </div>
+			<div>
+                <input type="radio" id="gostaria4" name="gostaria" value="Eventos">
+                <label for="gostaria4">Eventos</label>
+            </div>
+			<div>
+                <input type="radio" id="gostaria5" name="gostaria" value="Outro">
+                <label for="gostaria5">Outro</label>
+            </div>
+
+			<label>Qual funcionalidade você considera essencial em um aplicativo esportivo?</label>
+            <div>
+                <input type="radio" id="considera1" name="considera" value="Rastreamento de desempenho">
+                <label for="considera1">Rastreamento de desempenho</label>
+            </div>
+			<div>
+                <input type="radio" id="considera2" name="considera" value="Informações sobre esportes">
+                <label for="considera2">Informações sobre esportes</label>
+            </div>
+			<div>
+                <input type="radio" id="considera3" name="considera" value="Comunidade de praticantes">
+                <label for="considera3">Comunidade de praticantes</label>
+            </div>
+			<div>
+                <input type="radio" id="considera4" name="considera" value="Notificações de eventos">
+                <label for="considera4">Notificações de eventos</label>
+            </div>
+			<div>
+                <input type="radio" id="considera5" name="considera" value="Outro">
+                <label for="considera5">Outro</label>
+            </div>
+
+			<button type="submit">Enviar</button>
+
+
+        </form>
+    </main>
+	<div id="resultado"></div>
+
+</body>
+</html>
