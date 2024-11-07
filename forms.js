@@ -31,6 +31,13 @@ window.onload = function () {
   }
 };
 
+modoSite.addEventListener("click", mudarModo);
+button.addEventListener("click", voltarDash);
+
+
+
+
+
 const esportes = [
   "Futebol",
   "Caminhada e corrida",
@@ -52,8 +59,6 @@ function getEsportesBinarios() {
   const checkboxes = document.querySelectorAll(
     "input[type='checkbox'][name='pratica']"
   );
-
-  console.log("ISSO",checkboxes.length)
   checkboxes.forEach((checkbox) => {
     checkbox.value = checkbox.checked
       ? esportesBinarios.push(1)
@@ -63,38 +68,29 @@ function getEsportesBinarios() {
   return esportesBinarios;
 }
 
-modoSite.addEventListener("click", mudarModo);
-button.addEventListener("click",voltarDash)
 function getFormData() {
   const formData = new FormData(document.getElementById("iaForm"));
 
   const result = [];
+  let estado = ""; // Usando 'let' para permitir reatribuição
 
   formData.forEach((value, key) => {
-    if (key == "pratica") {
-      const esportesBinarios = getEsportesBinarios();
-      result.push(...esportesBinarios);
-      
-    }
-    else{
-      result.push(value);
+    if (key === "estado") {
+      estado = value; // Atribui o valor de 'estado' diretamente
+    } else if (key !== "pratica") {
+      result.push(value); // Adiciona todos os valores, exceto os de 'pratica'
     }
   });
 
+  result.push(estado); // Adiciona o 'estado' após o loop
+  const esportesBinarios = getEsportesBinarios(); // A função para pegar os dados binários dos esportes
+  result.push(...esportesBinarios); // Espalha os valores binários no final do array
+  
   return result;
 }
 
-// Função para gerar a resposta binária dos esportes
-function getEsportesBinarios() {
-  // Exemplo: Retorna um array binário para esportes (deve ser adaptado para corresponder à lógica correta)
-  return [1, 0, 0, 1, 0]; // Exemplo de valores binários
-}
-
-
 
 console.log(getFormData());
-
-
 
 function submitForm(event) {
   event.preventDefault();
