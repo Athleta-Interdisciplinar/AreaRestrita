@@ -54,10 +54,6 @@ body{
     font-size: 1rem;
 }
 
-.ia-button:hover {
-    background-color: #f4f4f4;
-}
-
 main {
     height: calc(100vh - 5rem);
 }

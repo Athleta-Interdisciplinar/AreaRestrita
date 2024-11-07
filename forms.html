@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -18,7 +19,7 @@
                 
             </div>
             <div class="buttons">
-                <button onclick="window.location.href='index.html'" class="ia-button" id="button-inicio">Inicio</button>
+                <button onclick="window.location.href='index.html'" class="ia-button" id="button-inicio">DashBoard</button>
                 <img src="./assets/dark-mode.svg" alt="Modo escuro" id="imagem-modo">
             </div>
         </nav>
@@ -58,8 +59,6 @@
             </div>
 
 
-
-            <!-- Caixa de seleção (checkbox) para permitir múltiplas escolhas -->
             <label>Gênero</label>
             <div>
                 <input type="radio" id="genero1" name="genero" value="Feminino">
@@ -75,9 +74,8 @@
             </div>
 
 
-			<!-- Caixa de texto para resposta aberta -->
             <label for="cidade">Localização (Cidade)</label>
-            <input type="text" id="cidade" name="objective" required>
+            <input type="text" id="cidade" name="cidade" required>
 
 			<label for="estado">Selecione seu estado:</label>
 
@@ -189,31 +187,31 @@
 
 			<label>Quais esportes você tem interesse em experimentar?</label>
 			<div>
-				<input type="checkbox" id="pratica1" name="pratica" value="Futebol">
+				<input type="checkbox" id="pratica13" name="pratica" value="Futebol">
 				<label for="pratica1">Futebol</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica2" name="pratica" value="Caminhada e corrida">
+				<input type="checkbox" id="pratica14" name="pratica" value="Caminhada e corrida">
 				<label for="pratica2">Caminhada e corrida</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica3" name="pratica" value="Voleibol">
+				<input type="checkbox" id="pratica15" name="pratica" value="Voleibol">
 				<label for="pratica3">Voleibol</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica4" name="pratica" value="Academia e musculação">
+				<input type="checkbox" id="pratica15" name="pratica" value="Academia e musculação">
 				<label for="pratica4">Academia e musculação</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica5" name="pratica" value="Natação">
+				<input type="checkbox" id="pratica17" name="pratica" value="Natação">
 				<label for="pratica5">Natação</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica6" name="pratica" value="Tênis de mesa">
+				<input type="checkbox" id="pratica18" name="pratica" value="Tênis de mesa">
 				<label for="pratica6">Tênis de mesa</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica7" name="pratica" value="Ciclismo">
+				<input type="checkbox" id="pratica19" name="pratica" value="Ciclismo">
 				<label for="pratica7">Ciclismo</label>
 			</div>
 			<div>
@@ -221,23 +219,23 @@
 				<label for="pratica8">Basquetebol</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica9" name="pratica" value="Atletismo">
+				<input type="checkbox" id="pratica20" name="pratica" value="Atletismo">
 				<label for="pratica9">Atletismo</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica10" name="pratica" value="Esgrima">
+				<input type="checkbox" id="pratica21" name="pratica" value="Esgrima">
 				<label for="pratica10">Esgrima</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica11" name="pratica" value="Baseball">
+				<input type="checkbox" id="pratic22" name="pratica" value="Baseball">
 				<label for="pratica11">Voleibol</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica12" name="pratica" value="Badminton">
+				<input type="checkbox" id="pratica23" name="pratica" value="Badminton">
 				<label for="pratica12">Basquete</label>
 			</div>
 			<div>
-				<input type="checkbox" id="pratica12" name="pratica" value="Nenhum">
+				<input type="checkbox" id="pratica24" name="pratica" value="Nenhum">
 				<label for="pratica12">Nenhum</label>
 			</div>
 
@@ -412,7 +410,7 @@
                 <label for="considera5">Outro</label>
             </div>
 
-			<button type="submit">Enviar</button>
+			<button type="submit" id="submitForm">Enviar</button>
 
 
         </form>
